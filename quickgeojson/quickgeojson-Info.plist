@@ -4,47 +4,23 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
-
-    <key>CFBundleDocumentTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleTypeRole</key>
-            <string>QLGenerator</string>
-            <key>LSItemContentTypes</key>
-            <array/>
-        </dict>
-        <dict>
-            <key>CFBundleTypeRole</key>
-            <string>QLGenerator</string>
-            <key>LSItemContentTypes</key>
-            <array>
-                <string>com.apple.dt.document.geojson</string>
-            </array>
-        </dict>
-    </array>
-
-
-    <key>UTExportedTypeDeclarations</key>
-    <array>
-        <dict>
-            <key>UTTypeConformsTo</key>
-            <array>
-                <string>public.json</string>
-            </array>
-            <key>UTTypeIdentifier</key>
-            <string>com.apple.dt.document.geojson</string>
-            <key>UTTypeTagSpecification</key>
-            <dict>
-                <key>com.apple.ostype</key>
-                <string>TEXT</string>
-                <key>public.filename-extension</key>
-                <array>
-                    <string>geojson</string>
-                </array>
-            </dict>
-        </dict>
-    </array>
-
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>QLGenerator</string>
+			<key>LSItemContentTypes</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>QLGenerator</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.apple.dt.document.geojson</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
@@ -89,5 +65,25 @@
 	<false/>
 	<key>QLThumbnailMinimumSize</key>
 	<real>17</real>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.json</string>
+			</array>
+			<key>UTTypeIdentifier</key>
+			<string>com.apple.dt.document.geojson</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>com.apple.ostype</key>
+				<string>TEXT</string>
+				<key>public.filename-extension</key>
+				<array>
+					<string>geojson</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>
