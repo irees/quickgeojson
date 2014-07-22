@@ -51,9 +51,8 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         
         // Add the attachments.
         NSMutableDictionary* attachments = [NSMutableDictionary dictionary];
-        attach(&bundle, attachments, @"image/png", @"test.png");
         attach(&bundle, attachments, @"text/css", @"leaflet.css");
-        attach(&bundle, attachments, @"text/javascript", @"test2.js");
+        attach(&bundle, attachments, @"text/javascript", @"leaflet.js");
         [properties setObject:attachments forKey:(NSString*)kQLPreviewPropertyAttachmentsKey];
         
         // Create the HTML Document...
