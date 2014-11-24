@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		191B8C671945B3D90002F307 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = 191B8C661945B3D90002F307 /* leaflet.css */; };
-		191B8C6D1945CCF90002F307 /* leaflet.js in Resources */ = {isa = PBXBuildFile; fileRef = 191B8C6C1945CCF90002F307 /* leaflet.js */; };
 		19C62B541941A613008FE3C2 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C62B531941A613008FE3C2 /* QuickLook.framework */; };
 		19C62B561941A613008FE3C2 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C62B551941A613008FE3C2 /* ApplicationServices.framework */; };
 		19C62B581941A613008FE3C2 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C62B571941A613008FE3C2 /* CoreServices.framework */; };
@@ -18,11 +16,13 @@
 		19C62B641941A613008FE3C2 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C62B631941A613008FE3C2 /* GeneratePreviewForURL.m */; };
 		19C62B661941A613008FE3C2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 19C62B651941A613008FE3C2 /* main.c */; };
 		19C62B6E1941AEC4008FE3C2 /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = 19C62B6D1941AEC4008FE3C2 /* template.html */; };
+		91924DE61A22DB8800B470BE /* icons-000000@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91924DE21A22DB8800B470BE /* icons-000000@2x.png */; };
+		91924DE71A22DB8800B470BE /* mapbox.v2.1.4.css in Resources */ = {isa = PBXBuildFile; fileRef = 91924DE31A22DB8800B470BE /* mapbox.v2.1.4.css */; };
+		91924DE81A22DB8800B470BE /* mapbox.v2.1.4.js in Resources */ = {isa = PBXBuildFile; fileRef = 91924DE41A22DB8800B470BE /* mapbox.v2.1.4.js */; };
+		91924DE91A22DB8800B470BE /* leaflet-omnivore.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 91924DE51A22DB8800B470BE /* leaflet-omnivore.min.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		191B8C661945B3D90002F307 /* leaflet.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = leaflet.css; sourceTree = "<group>"; };
-		191B8C6C1945CCF90002F307 /* leaflet.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = leaflet.js; sourceTree = "<group>"; };
 		19C62B501941A613008FE3C2 /* quickgeojson.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quickgeojson.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C62B531941A613008FE3C2 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		19C62B551941A613008FE3C2 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
@@ -35,6 +35,10 @@
 		19C62B651941A613008FE3C2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		19C62B671941A613008FE3C2 /* quickgeojson-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quickgeojson-Prefix.pch"; sourceTree = "<group>"; };
 		19C62B6D1941AEC4008FE3C2 /* template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
+		91924DE21A22DB8800B470BE /* icons-000000@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons-000000@2x.png"; sourceTree = "<group>"; };
+		91924DE31A22DB8800B470BE /* mapbox.v2.1.4.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = mapbox.v2.1.4.css; sourceTree = "<group>"; };
+		91924DE41A22DB8800B470BE /* mapbox.v2.1.4.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mapbox.v2.1.4.js; sourceTree = "<group>"; };
+		91924DE51A22DB8800B470BE /* leaflet-omnivore.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "leaflet-omnivore.min.js"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +87,13 @@
 		19C62B5B1941A613008FE3C2 /* quickgeojson */ = {
 			isa = PBXGroup;
 			children = (
+				91924DE21A22DB8800B470BE /* icons-000000@2x.png */,
+				91924DE31A22DB8800B470BE /* mapbox.v2.1.4.css */,
+				91924DE41A22DB8800B470BE /* mapbox.v2.1.4.js */,
+				91924DE51A22DB8800B470BE /* leaflet-omnivore.min.js */,
 				19C62B611941A613008FE3C2 /* GenerateThumbnailForURL.m */,
-				191B8C6C1945CCF90002F307 /* leaflet.js */,
 				19C62B631941A613008FE3C2 /* GeneratePreviewForURL.m */,
 				19C62B6D1941AEC4008FE3C2 /* template.html */,
-				191B8C661945B3D90002F307 /* leaflet.css */,
 				19C62B651941A613008FE3C2 /* main.c */,
 				19C62B5C1941A613008FE3C2 /* Supporting Files */,
 			);
@@ -167,9 +173,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				191B8C6D1945CCF90002F307 /* leaflet.js in Resources */,
 				19C62B6E1941AEC4008FE3C2 /* template.html in Resources */,
-				191B8C671945B3D90002F307 /* leaflet.css in Resources */,
+				91924DE71A22DB8800B470BE /* mapbox.v2.1.4.css in Resources */,
+				91924DE81A22DB8800B470BE /* mapbox.v2.1.4.js in Resources */,
+				91924DE91A22DB8800B470BE /* leaflet-omnivore.min.js in Resources */,
+				91924DE61A22DB8800B470BE /* icons-000000@2x.png in Resources */,
 				19C62B601941A613008FE3C2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
