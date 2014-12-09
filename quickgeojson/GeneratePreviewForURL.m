@@ -25,11 +25,15 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 
         // Load the data
         NSURL *nsurl = (__bridge NSURL *)url;
-        NSData *data = [NSData dataWithContentsOfURL:nsurl];
-        if (!data) return noErr;
-        // Convert to NSString
-        NSString *geojson = [NSString stringWithUTF8String:[data bytes]];
-
+        
+        /*
+         was having difficulty with loading the data via dataWithContentsOfURL and then into a string with
+         stringWithUTF8String. I was seeing incomplete data loaded occasionally, so instead I'm trying
+         stringWithContentsOfURL and that seems to consistently load all data as needed
+        */
+        NSString *geojson = [NSString stringWithContentsOfURL:nsurl encoding:NSUTF8StringEncoding error:nil];
+        
+        
         // Bundle reference.
         CFBundleRef bundle = QLPreviewRequestGetGeneratorBundle(preview);
 
@@ -51,8 +55,10 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
         
         // Add the attachments.
         NSMutableDictionary* attachments = [NSMutableDictionary dictionary];
-        attach(&bundle, attachments, @"text/css", @"leaflet.css");
-        attach(&bundle, attachments, @"text/javascript", @"leaflet.js");
+        attach(&bundle, attachments, @"text/css", @"mapbox.v2.1.4.css");
+        attach(&bundle, attachments, @"text/javascript", @"mapbox.v2.1.4.js");
+        attach(&bundle, attachments, @"image/png", @"icons-000000@2x.png");
+        attach(&bundle, attachments, @"text/javascript", @"leaflet-omnivore.min.js");
         [properties setObject:attachments forKey:(NSString*)kQLPreviewPropertyAttachmentsKey];
         
         // Create the HTML Document...

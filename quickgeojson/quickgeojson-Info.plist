@@ -10,15 +10,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>QLGenerator</string>
 			<key>LSItemContentTypes</key>
-			<array/>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>QLGenerator</string>
-			<key>LSItemContentTypes</key>
 			<array>
 				<string>com.apple.dt.document.geojson</string>
-			</array>
+                <string>dyn.ah62d4rv4ge81k55ur7zhg55s</string>
+            </array>
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
