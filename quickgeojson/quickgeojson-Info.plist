@@ -12,8 +12,8 @@
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>com.apple.dt.document.geojson</string>
-                <string>dyn.ah62d4rv4ge81k55ur7zhg55s</string>
-            </array>
+				<string>dyn.ah62d4rv4ge81k55ur7zhg55s</string>
+			</array>
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
@@ -29,7 +29,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFPlugInDynamicRegisterFunction</key>
 	<string></string>
 	<key>CFPlugInDynamicRegistration</key>
