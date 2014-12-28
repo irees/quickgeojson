@@ -1,11 +1,11 @@
 quickgeojson
 ============
 
-QuickLook for GeoJSON
+QuickLook for GeoJSON and TopoJSON
 
-![quickgeojson screenshot](https://raw.githubusercontent.com/irees/quickgeojson/master/screenshot.png)
+![quickgeojson screenshot](screenshot1.png?raw=true)
 
-This is a simple QuickLook plugin to browse GeoJSON files.  It matches files with the ".geojson" extension.
+This is a simple QuickLook plugin to browse GeoJSON and TopoJSON files.
 
 It's a simple web-based preview using Leaflet.js. Probably many errors and mistakes since this is my first Obj-C project. It's mostly based on TileMill's QuickLook plugin for MBTiles.
 
@@ -15,3 +15,9 @@ It's a simple web-based preview using Leaflet.js. Probably many errors and mista
 * Then click the "Distribute" button, and save to a folder.
 * Copy the resulting file (quickgeojson.qlgenerator) to your home folder as `~/Library/QuickLook/quickgeojson.qlgenerator`. (You may need to create the QuickLook folder if it doesn't yet exist.
 * Finder may pick it up automatically, but if it doesn't, you can run `qlmanage -r` to reload the plugins.
+
+### simplestyle-spec support
+The plugin also supports [simplestyle-spec](https://github.com/mapbox/simplestyle-spec) for coloring/styling the polygons. 
+
+![styled screenshot](screenshot2.png?raw=true)
+
