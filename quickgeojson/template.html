@@ -65,14 +65,14 @@
         
         // QuickLook isn't supposed to allow external resources,
         // but amazingly it works!
-  		
+          
         var map = L.map('map');
-        L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+        L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/{style}/{z}/{x}/{y}@2x.png', {
                     maxZoom: 18,
                     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
                     '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                    'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-                    id: 'examples.map-20v6611k'
+                    'Imagery © <a href="https://carto.com/attribution">CARTO</a>',
+                    style: 'light_all'
                     }).addTo(map);
         var layer;
         
