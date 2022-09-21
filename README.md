@@ -11,7 +11,9 @@ This is a simple QuickLook plugin to browse GeoJSON and TopoJSON files.
 
 This QuickLook Plugin can now be installed using [Homebrew Cask](https://github.com/caskroom/homebrew-cask):
 
-> homebrew cask install quickgeojson
+```bash
+brew install --cask quickgeojson
+```
 
 ### Installation Instructions
 
